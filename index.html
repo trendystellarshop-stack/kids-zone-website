@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kids Zone - Fun Learning & Games</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-star"></i>
+                <span>Kids Zone</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">🏠 Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#games" class="nav-link">🎮 Games</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#learning" class="nav-link">📚 Learning</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#stories" class="nav-link">📖 Stories</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#parent-zone" class="nav-link">👨‍👩‍👧‍👦 Parents</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Welcome to Kids Zone! 🌟</h1>
+            <p>Where Learning Meets Fun</p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary" onclick="document.getElementById('games').scrollIntoView({behavior: 'smooth'})">Start Playing</button>
+                <button class="btn btn-secondary" onclick="document.getElementById('learning').scrollIntoView({behavior: 'smooth'})">Learn Now</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Games Section -->
+    <section id="games" class="section games-section">
+        <div class="container">
+            <h2 class="section-title">🎮 Fun Games</h2>
+            <div class="games-grid">
+                <div class="game-card">
+                    <div class="game-icon">🎯</div>
+                    <h3>Memory Match</h3>
+                    <p>Test your memory with matching pairs</p>
+                    <button class="btn btn-small" onclick="startGame('memory')">Play</button>
+                </div>
+                <div class="game-card">
+                    <div class="game-icon">🎨</div>
+                    <h3>Color Quiz</h3>
+                    <p>Learn colors while having fun</p>
+                    <button class="btn btn-small" onclick="startGame('colors')">Play</button>
+                </div>
+                <div class="game-card">
+                    <div class="game-icon">🔢</div>
+                    <h3>Number Rush</h3>
+                    <p>Count and solve math puzzles</p>
+                    <button class="btn btn-small" onclick="startGame('numbers')">Play</button>
+                </div>
+                <div class="game-card">
+                    <div class="game-icon">🔤</div>
+                    <h3>Letter Hunt</h3>
+                    <p>Find and identify letters</p>
+                    <button class="btn btn-small" onclick="startGame('letters')">Play</button>
+                </div>
+                <div class="game-card">
+                    <div class="game-icon">🌍</div>
+                    <h3>Geography Quest</h3>
+                    <p>Explore countries and capitals</p>
+                    <button class="btn btn-small" onclick="startGame('geography')">Play</button>
+                </div>
+                <div class="game-card">
+                    <div class="game-icon">🧩</div>
+                    <h3>Puzzle Master</h3>
+                    <p>Solve fun visual puzzles</p>
+                    <button class="btn btn-small" onclick="startGame('puzzle')">Play</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Learning Section -->
+    <section id="learning" class="section learning-section">
+        <div class="container">
+            <h2 class="section-title">📚 Educational Resources</h2>
+            <div class="learning-grid">
+                <div class="learning-card">
+                    <div class="learning-icon">🔬</div>
+                    <h3>Science</h3>
+                    <p>Discover how the world works</p>
+                    <ul class="resource-list">
+                        <li>🌍 Our Planet</li>
+                        <li>🐦 Animals & Nature</li>
+                        <li>⭐ Space & Stars</li>
+                        <li>💧 Water Cycle</li>
+                    </ul>
+                </div>
+                <div class="learning-card">
+                    <div class="learning-icon">✏️</div>
+                    <h3>Math</h3>
+                    <p>Master numbers and calculations</p>
+                    <ul class="resource-list">
+                        <li>🔢 Basic Counting</li>
+                        <li>➕ Addition & Subtraction</li>
+                        <li>✖️ Multiplication</li>
+                        <li>📐 Shapes & Geometry</li>
+                    </ul>
+                </div>
+                <div class="learning-card">
+                    <div class="learning-icon">📖</div>
+                    <h3>Language</h3>
+                    <p>Learn to read and write</p>
+                    <ul class="resource-list">
+                        <li>🔤 Alphabet Basics</li>
+                        <li>📝 Word Building</li>
+                        <li>🗣️ Speaking Skills</li>
+                        <li>🌐 New Languages</li>
+                    </ul>
+                </div>
+                <div class="learning-card">
+                    <div class="learning-icon">🎭</div>
+                    <h3>Arts & Crafts</h3>
+                    <p>Express your creativity</p>
+                    <ul class="resource-list">
+                        <li>🎨 Drawing Tips</li>
+                        <li>✂️ Paper Crafts</li>
+                        <li>🖌️ Painting Techniques</li>
+                        <li>🎭 DIY Projects</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stories Section -->
+    <section id="stories" class="section stories-section">
+        <div class="container">
+            <h2 class="section-title">📖 Story Time</h2>
+            <div class="stories-grid">
+                <div class="story-card">
+                    <div class="story-cover">🦁</div>
+                    <h3>The Lion's Adventure</h3>
+                    <p class="story-excerpt">Follow Leo the lion on an exciting journey through the savanna...</p>
+                    <button class="btn btn-small">Read Story</button>
+                </div>
+                <div class="story-card">
+                    <div class="story-cover">🧚</div>
+                    <h3>Fairy Tales</h3>
+                    <p class="story-excerpt">Classic stories of magic, wonder, and happily ever afters...</p>
+                    <button class="btn btn-small">Read Story</button>
+                </div>
+                <div class="story-card">
+                    <div class="story-cover">🚀</div>
+                    <h3>Space Explorer</h3>
+                    <p class="story-excerpt">Join Captain Zara on a thrilling voyage through the galaxy...</p>
+                    <button class="btn btn-small">Read Story</button>
+                </div>
+                <div class="story-card">
+                    <div class="story-cover">🐢</div>
+                    <h3>Animal Friends</h3>
+                    <p class="story-excerpt">Heartwarming tales of friendship among forest creatures...</p>
+                    <button class="btn btn-small">Read Story</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Parent Zone -->
+    <section id="parent-zone" class="section parent-section">
+        <div class="container">
+            <h2 class="section-title">👨‍👩‍👧‍👦 Parent Controls & Info</h2>
+            <div class="parent-content">
+                <div class="parent-card">
+                    <h3>🔒 Safety Features</h3>
+                    <ul>
+                        <li>Content filtering for age-appropriate material</li>
+                        <li>No external links or advertisements</li>
+                        <li>Parental control settings</li>
+                        <li>Usage time limits and reminders</li>
+                    </ul>
+                </div>
+                <div class="parent-card">
+                    <h3>📊 Progress Tracking</h3>
+                    <ul>
+                        <li>Monitor learning activities</li>
+                        <li>View game scores and achievements</li>
+                        <li>Track time spent on different categories</li>
+                        <li>Receive weekly progress reports</li>
+                    </ul>
+                </div>
+                <div class="parent-card">
+                    <h3>❓ Frequently Asked Questions</h3>
+                    <details>
+                        <summary>How can I set up parental controls?</summary>
+                        <p>Visit the Settings page and create your parent account with a PIN to enable controls.</p>
+                    </details>
+                    <details>
+                        <summary>Is the content safe for all ages?</summary>
+                        <p>Yes! All content is carefully curated and age-appropriate for children 3-12 years old.</p>
+                    </details>
+                    <details>
+                        <summary>Can I set time limits?</summary>
+                        <p>Yes, you can set daily time limits for different activities in the parent control panel.</p>
+                    </details>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Game Modal -->
+    <div id="gameModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeGame()">&times;</span>
+            <div id="gameContainer"></div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Kids Zone - Safe Learning & Entertainment. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Contact Us</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
