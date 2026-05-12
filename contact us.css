@@ -1,0 +1,13 @@
+/* Contact page refinements */
+
+.contact-page .contact-info {
+    border-top: 6px solid var(--primary-color);
+}
+
+.contact-page .contact-form {
+    border-top: 6px solid var(--secondary-color);
+}
+
+.contact-page .hero-buttons .btn {
+    min-width: 180px;
+}

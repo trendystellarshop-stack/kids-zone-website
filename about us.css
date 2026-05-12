@@ -1,0 +1,13 @@
+/* About page refinements */
+
+.about-page .about-intro {
+    border-left: 6px solid var(--primary-color);
+}
+
+.about-page .about-card:nth-child(odd) {
+    background: linear-gradient(180deg, #ffffff 0%, #fdfcff 100%);
+}
+
+.about-page .hero-buttons .btn {
+    min-width: 180px;
+}
